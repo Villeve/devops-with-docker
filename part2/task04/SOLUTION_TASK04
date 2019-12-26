@@ -1,0 +1,2 @@
+The button turned green without any changes to docker-compose.yml by running following command:
+    docker-compose up --scale compute=5

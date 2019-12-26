@@ -1,0 +1,9 @@
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                            PORTS               NAMES
+4becdc1776e1        ubuntu              "/bin/bash"              6 minutes ago       Exited (0) About a minute ago                      	      unruffled_shockley
+dceacbea1e6d        mysql               "docker-entrypoint.s…"   11 minutes ago      Exited (1) 11 minutes ago                             unruffled_lamarr
+9239d29f47a4        mysql               "docker-entrypoint.s…"   12 minutes ago      Exited (127) 12 minutes ago                           intelligent_stonebraker
+9cf326978634        mysql               "docker-entrypoint.s…"   12 minutes ago      Exited (1) 12 minutes ago                             youthful_chatterjee
+4d93dd4ed833        mysql               "docker-entrypoint.s…"   12 minutes ago      Exited (1) 12 minutes ago                             condescending_cerf
+c947b1df9f5d        nginx               "nginx -g 'daemon of…"   13 minutes ago      Up 13 minutes                     80/tcp              dreamy_lamarr
+9a3f4051060f        centos              "/bin/bash"              14 minutes ago      Exited (127) About a minute ago                       blissful_mclean
+

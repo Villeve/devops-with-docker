@@ -1,0 +1,23 @@
+version: '3.5'
+
+services: 
+  frontend:
+      build: ./frontend-example-docker
+      expose:
+        - "5000"
+      ports:
+        - "5000:5000"
+      environment: 
+        - API_URL=http://localhost:8000
+      container_name: frontend_with_ubuntu
+      depends_on:
+        - backend
+  backend:
+      build: ./backend-example-docker
+      expose:
+        - "8000"
+      ports:
+        - "8000:8000"
+      environment:
+        - FRONT_URL=http://localhost:5000
+      container_name: backend_with_ubuntu

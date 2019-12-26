@@ -1,0 +1,2 @@
+1. docker volume create part1-08-volume
+2. docker run -v part1-08-volume:/usr/app devopsdockeruh/first_volume_exercise 

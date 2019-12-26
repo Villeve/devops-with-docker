@@ -1,0 +1,18 @@
+1. docker pull devopsdockeruh/exec_bash_exercise
+
+2. docker run devopsdockeruh/exec_bash_exercise
+
+3. sudo docker container ls
+CONTAINER ID        IMAGE                               COMMAND             CREATED             STATUS              PORTS               NAMES
+2a8f07d89811        devopsdockeruh/exec_bash_exercise   "node index"        41 seconds ago      Up 39 seconds                           flamboyant_hugle
+
+4. sudo docker exec -it 2a8f bash
+
+5. root@2a8f07d89811:/usr/app# cat logs.txt
+	Tue, 26 Nov 2019 18:55:18 GMT
+	Tue, 26 Nov 2019 18:55:21 GMT
+	Tue, 26 Nov 2019 18:55:24 GMT
+	Tue, 26 Nov 2019 18:55:27 GMT
+	Secret message is:
+	"Docker is easy"
+

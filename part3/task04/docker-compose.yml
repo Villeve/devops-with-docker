@@ -1,0 +1,35 @@
+version: '3.5'
+
+services: 
+  frontend:
+      image: "node"
+      user: "node"
+      working_dir: /home/node/app
+      expose:
+        - "5000"
+      ports:
+        - "5000:5000"
+      environment: 
+        - API_URL=http://localhost:8000
+        - NODE_ENV=production
+      container_name: frontend_example
+      volumes:
+        - ./frontend-example-docker:/home/node/app
+      depends_on:
+        - backend
+      command: "npm start"
+  backend:
+      image: "node"
+      user: "node"
+      working_dir: /home/node/app
+      expose:
+        - "8000"
+      ports:
+        - "8000:8000"
+      environment:
+        - FRONT_URL=http://localhost:5000
+        - NODE_ENV=production
+      volumes:
+        - ./backend-example-docker:/home/node/app
+      container_name: backend-example
+      command: "npm start"
